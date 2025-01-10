@@ -1,7 +1,8 @@
 /* styles.css */
+/* styles.css */
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", "Helevetica" sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
@@ -13,7 +14,7 @@ body {
   text-align: center;
   padding: 100px 20px;
   background-size: cover;
-  height: 15%vh;
+  height: 10%vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
               url('img2.webp');
 }
@@ -24,7 +25,7 @@ h1 {
 }
 
 .intro p {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .navbar {
@@ -49,8 +50,9 @@ nav.navbar a {
   color: #FFF8E1;
   text-decoration: none;
   font-weight: bold;
-
+  font-size: 1.75rem;
 }
+
 
 nav.navbar a:hover {
   color: #FFB74D;
@@ -60,18 +62,23 @@ section {
   padding: 40px 20px;
   text-align: center;
   background-color: #FFF8E1;
+  font-size: 1.8rem;
 }
 
 section h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin-bottom: 20px;
 }
 
 .about p {
-  max-width: 600px;
   margin: 0 auto;
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   height: 1px;
+  max-width: 1100px;
+}
+
+.menuText p{
+  margin-bottom: 50px;
 }
 
 .menu-grid {
@@ -80,6 +87,10 @@ section h2 {
   gap: 20px;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.cart h2{
+  margin-top: 20px;
 }
 
 .menu-item {
@@ -104,6 +115,8 @@ footer.footer {
   color: #D7CCC8;
   padding: 20px;
   text-align: center;
+  font-size: 1.5rem;
+
 }
 
 footer.footer ul {
@@ -112,11 +125,13 @@ footer.footer ul {
   justify-content: center;
   gap: 10px;
   padding: 0;
+  font-size: 1.5rem;
 }
 
 footer.footer a {
   color: #D7CCC8;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 footer.footer a:hover {
