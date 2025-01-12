@@ -14,26 +14,27 @@ body {
   text-align: center;
   padding: 100px 20px;
   background-size: cover;
-  height: 10%vh;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
               url('img2.webp');
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 0;
 }
 
 .intro p {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .navbar {
   background: #4E342E;
   color: #FFF8E1;
   padding: 10px 20px;
-  height: 30px;
+  height: auto;
   display: flex;
+  flex-wrap:wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -43,14 +44,15 @@ nav.navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 90px;}
+  gap: 20px;}
 
 nav.navbar a {
   color: #FFF8E1;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 
@@ -62,17 +64,17 @@ section {
   padding: 40px 20px;
   text-align: center;
   background-color: #FFF8E1;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 section h2 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
 .about p {
   margin: 0 auto;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   height: 1px;
   max-width: 1100px;
 }
@@ -115,14 +117,20 @@ footer.footer {
   color: #D7CCC8;
   padding: 20px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
 
+footer.footer p{
+  font-size: 1.2rem;
+}
+footer.footer #final{
+  font-size: 0.8rem;
 }
 
 footer.footer ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 10px;
   padding: 0;
   font-size: 1.5rem;
@@ -131,12 +139,166 @@ footer.footer ul {
 footer.footer a {
   color: #D7CCC8;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  
 }
 
 footer.footer a:hover {
   color: #FFB74D;
 }
+ /* tabs */
+
+@media (max-width: 768px) {
+  .intro {
+    padding: 50px 10px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  .intro p {
+    font-size: 1.5rem;
+  }
+
+  nav.navbar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+
+  nav.navbar ul {
+    width: 100vw;
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  footer.footer ul {
+    gap: 5px;
+  }
+
+  footer.footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile*/
+@media (max-width: 480px) {
+  .intro {
+    padding: 30px 10px;
+    height: 25vh;
+    display: flexbox;
+    justify-content: space-between;
+  }
+
+  .intro h1{
+    font-size: 3rem;
+  }
+  .intro p{
+    font-size: 1rem;
+  }
 
   
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  nav.navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+  }
+
+  nav.navbar a {
+    font-size: 1rem;
+  }
+
+  .about{
+    height: 22vh;
+  }
+
   
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item {
+    padding: 10px;
+  }
+
+  footer.footer {
+    font-size: 0.8rem;
+  }
+}
+
+/*laptops*/
+@media (max-width: 1280px) {
+  .intro {
+    padding: 80px 15px;
+    height: 15vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1 {
+    font-size: 4rem; 
+  }
+
+  .intro p {
+    font-size: 2.2rem; 
+  }
+
+  nav.navbar {
+    padding: 10px 15px; 
+  }
+
+  nav.navbar ul {
+    gap: 50px; 
+  }
+
+  .navbar a{
+    font-size: 1.5rem ;
+   
+  
+ section {
+ padding: 30px 15px; 
+}
+
+  section h2 {
+    font-size: 2rem; 
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    max-width: 900px; 
+    gap: 15px; 
+
+  }
+
+  .menu-item {
+    padding: 15px; 
+    font-size: 1.2rem; 
+  }
+
+  footer.footer {
+    padding: 15px; 
+    font-size: 1rem; 
+  }
+
+  footer.footer ul {
+    gap: 8px; 
+}}
