@@ -130,8 +130,8 @@ footer.footer #final{
 footer.footer ul {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
+  justify-content: center;
+  gap: 20px;
   padding: 0;
   font-size: 1.5rem;
 }
@@ -246,10 +246,10 @@ footer.footer a:hover {
 }
 
 /*laptops*/
-@media (max-width: 1280px) {
+@media (max-width: 2000px) {
   .intro {
     padding: 80px 15px;
-    height: 15vh;
+    height: 20vh;
     background-size: cover;
     background-position: center;
   }
@@ -267,7 +267,9 @@ footer.footer a:hover {
   }
 
   nav.navbar ul {
-    gap: 50px; 
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
   }
 
   .navbar a{
@@ -296,9 +298,17 @@ footer.footer a:hover {
 
   footer.footer {
     padding: 15px; 
-    font-size: 1rem; 
+    display:flex;
+    justify-items: center;
+    width: 50vw;
+  }
+
+  footer.footer p{
+    font-size:1.5rem ;
   }
 
   footer.footer ul {
-    gap: 8px; 
+    gap: 5px;
+
+  
 }}
