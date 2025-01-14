@@ -3,7 +3,6 @@ let cart = [];
 let menuItem = document.querySelectorAll('.menu-item');
 const cartItem = document.getElementById("cart-item");
 const totalPrice = document.getElementById("total-price");
-let cart1 = document.querySelector('#cartAlert');
 
 function updateCart() {
     // Clear current cartItem
@@ -47,6 +46,4 @@ menuItem.forEach(item => {
     });
   });
 
-  cart1.addEventListener('click',() => {
-    alert('Click once of any menu item to add item to cart, and click again to remove the item from cart.')
-  });
+  
